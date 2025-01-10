@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <span routerLink="/products">Ng Coffee App</span>
+  <span class="flex-1"></span>
+  <button 
+    [matBadge]="totalItems()" 
+    [matBadgeHidden]="!totalItems()" 
+    routerLink="/cart" 
+    mat-icon-button 
+    aria-label="Shopping Cart Icon">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</mat-toolbar>

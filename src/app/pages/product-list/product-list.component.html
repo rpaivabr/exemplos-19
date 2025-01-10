@@ -1,0 +1,5 @@
+<div class="products">
+  @for(product of products(); track product.id) {
+    <app-card [product]="product" (select)="openDialog(product.id)" />
+  }
+</div>

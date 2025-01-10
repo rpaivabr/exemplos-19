@@ -1,0 +1,5 @@
+<div class="products">
+  @for(product of products(); track product.id) {
+    <app-card label="REMOVE" [product]="product" (select)="handleRemove(product.id)" />
+  }
+</div>
